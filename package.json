@@ -1,36 +1,36 @@
 {
-  "name": "app-top-web-frameworks",
-  "private": true,
-  "scripts": {
-    "build": "NITRO_PRESET=vercel-edge && nuxt build",
-    "dev": "nuxt dev",
-    "generate": "nuxt generate",
-    "preview": "nuxt preview",
-    "postinstall": "nuxt prepare",
-    "format": "prettier --check .",
-    "lint": "eslint --ext \".ts,.vue\" --ignore-path .gitignore .",
-    "lint:format": "yarn lint && yarn format",
-    "lintfix": "prettier --write --list-different . && yarn lint --fix",
-    "dev:migrate": "tsx ./migrate",
-    "tests:dev": "NUXT_TURSO_DB_URL=file:web-frameworks.db NUXT_TURSO_DB_AUTH_TOKEN=none nuxt dev",
-    "cypress:open": "LOCAL_SITE_URL=http://localhost:3000 cypress open",
-    "cypress:run": "LOCAL_SITE_URL=http://localhost:3000 cypress run"
-  },
-  "devDependencies": {
-    "@nuxtjs/eslint-config-typescript": "^12.0.0",
-    "@typescript-eslint/parser": "^5.60.1",
-    "cypress": "^12.16.0",
-    "eslint": "^8.43.0",
-    "eslint-config-prettier": "^8.8.0",
-    "eslint-plugin-prettier": "^4.2.1",
-    "nuxt": "^3.5.3",
-    "prettier": "^2.8.8",
-    "tsx": "^3.12.7",
-    "typescript": "^5.1.6"
-  },
-  "dependencies": {
-    "@libsql/client": "^0.2.1",
-    "@nuxtjs/tailwindcss": "^6.8.0",
-    "@tailwindcss/forms": "^0.5.3"
-  }
+	"name": "app-top-web-frameworks",
+	"private": true,
+	"scripts": {
+		"build": "NITRO_PRESET=vercel-edge && nuxt build",
+		"dev": "nuxt dev",
+		"generate": "nuxt generate",
+		"preview": "nuxt preview",
+		"postinstall": "nuxt prepare",
+		"format": "prettier --check .",
+		"lint": "eslint --ext \".ts,.vue\" --ignore-path .gitignore .",
+		"lint:format": "yarn lint && yarn format",
+		"lintfix": "prettier --write --list-different . && yarn lint --fix",
+		"dev:migrate": "tsx ./migrate",
+		"tests:dev": "NUXT_TURSO_DB_URL=file:web-frameworks.db NUXT_TURSO_DB_AUTH_TOKEN=none nuxt dev",
+		"cypress:open": "LOCAL_SITE_URL=http://localhost:3000 cypress open",
+		"cypress:run": "LOCAL_SITE_URL=http://localhost:3000 cypress run"
+	},
+	"devDependencies": {
+		"@nuxtjs/eslint-config-typescript": "^12.0.0",
+		"@typescript-eslint/parser": "^5.60.1",
+		"cypress": "^12.17.4",
+		"eslint": "^8.43.0",
+		"eslint-config-prettier": "^8.8.0",
+		"eslint-plugin-prettier": "^4.2.1",
+		"nuxt": "^3.5.3",
+		"prettier": "^2.8.8",
+		"tsx": "^3.12.7",
+		"typescript": "^5.1.6"
+	},
+	"dependencies": {
+		"@libsql/client": "^0.2.1",
+		"@nuxtjs/tailwindcss": "^6.8.0",
+		"@tailwindcss/forms": "^0.5.3"
+	}
 }
